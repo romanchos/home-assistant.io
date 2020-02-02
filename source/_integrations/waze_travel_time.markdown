@@ -63,8 +63,7 @@ units:
 vehicle_type:
   description: "Set the vehicle type for the sensor: car, taxi, or motorcycle, otherwise the default is car."
   required: false
-  type: string
-avoid_ferries:
+  type: string_ferries:
   description: "If this is set to true, Waze will avoid ferries on your route."
   required: false
   type: boolean
@@ -142,8 +141,8 @@ sensor:
     origin: 51.330436, 3.802043
     destination: 51.445677, 3.749929
     region: 'EU'
-    avoid_toll_roads: true
-    avoid_subscription_roads: true  
+    avoid_toll_roads: 'true'
+    avoid_subscription_roads: 'true'  
 ```
 {% endraw %}
 
